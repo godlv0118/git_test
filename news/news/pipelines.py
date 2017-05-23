@@ -9,3 +9,5 @@
 class NewsPipeline(object):
     def process_item(self, item, spider):
         return item
+    def Baidu_item(self,item,spider):
+        pass
