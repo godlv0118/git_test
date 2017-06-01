@@ -11,8 +11,9 @@ sys.setdefaultencoding("utf8")
 class Baidu(models.Model):
     title = models.CharField(max_length=100)      #新闻的标题
     content = models.TextField(max_length=200)    #新闻的大概内容
-    from_where = models.CharField(max_length=20,blank=True) #新闻的出处
-    url = models.CharField(max_length=100)        #新闻的链接
+    where = models.CharField(max_length=20,blank=True) #新闻的出处
+    time = models.CharField(max_length=50)       #新闻发布时间
+    url = models.CharField(max_length=200)        #新闻的链接
 
     def __str__(self):
         return self.title
