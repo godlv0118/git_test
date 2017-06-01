@@ -15,6 +15,7 @@ class NewsItem(scrapy.Item):
 class BaiduNewsItem(scrapy.Item):
     title = scrapy.Field()      #新闻的标题
     content = scrapy.Field()    #新闻的大概内容
-    from_where = scrapy.Field() #新闻的出处
+    where = scrapy.Field()      #新闻的出处
+    time = scrapy.Field()       #新闻发布时间
     url = scrapy.Field()        #新闻的链接
 
